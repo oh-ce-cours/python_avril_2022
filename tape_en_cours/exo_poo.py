@@ -12,11 +12,7 @@ class Personne:
         return self.get_age() > self.AGE_MAJORITE
 
     def presentation(self):
-        txt = ""
-        if self.est_majeur():
-            txt = "je suis majeur"
-        else:
-            txt = "je suis mineur"
+        txt = "je suis majeur" if self.est_majeur() else "je suis mineur"
         return f"Je suis {self.nom}, j'ai {self.get_age()} ans et {txt}"
 
 
