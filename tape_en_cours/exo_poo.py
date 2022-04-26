@@ -18,3 +18,6 @@ class Personne:
         else:
             txt = "je suis mineur"
         return f"Je suis {self.nom}, j'ai {self.get_age()} ans et {txt}"
+
+
+p1 = Personne(1990, "Mathieu")
