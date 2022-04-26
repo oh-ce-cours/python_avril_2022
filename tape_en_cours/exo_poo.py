@@ -13,7 +13,7 @@ class Personne:
 
     def presentation(self):
         txt = "majeur" if self.est_majeur() else "mineur"
-        return f"Je suis {self.nom}, j'ai {self.get_age()} ans et je suis  {txt}"
+        return f"Je suis {self.nom}, j'ai {self.get_age()} ans et je suis {txt}"
 
 
 p1 = Personne(2020, "Matthieu")
