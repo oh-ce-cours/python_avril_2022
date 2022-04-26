@@ -1,46 +1,59 @@
-# import random
+import random
 
-# NOMBRE_A_TROUVER = 5
+NOMBRE_A_TROUVER = 5
+CHAINE_CEST_PLUS = "c'est plus"
+CHAINE_CEST_MOINS = "c'est moins"
 
-# # demande un nombre à l'utilisateur
-# def demande_a_l_utilisateur():
-#     return input("Entre un nombre s'il vous plait: ")
-
-
-# def est_un_nombre(valeur: str) -> bool:
-#     try:
-#         float(valeur)
-#     except ValueError:
-#         return False
-#     else:
-#         return True
+# demande un nombre à l'utilisateur
+def demande_a_l_utilisateur():
+    return input("Entre un nombre s'il vous plait: ")
 
 
-# def demander_un_nombre_a_l_utilisateur() -> float:
-#     entree = demande_a_l_utilisateur()
-#     while not est_un_nombre(entree):
-#         entree = demande_a_l_utilisateur()
-#     return float(entree)
+def est_un_nombre(valeur: str) -> bool:
+    try:
+        float(valeur)
+    except ValueError:
+        return False
+    else:
+        return True
 
 
-# # essayer de convertir la chaine en nombre
-# # indique si c'est plus ou moins
-# # indique si c'est gagné
+def demander_un_nombre_a_l_utilisateur() -> float:
+    entree = demande_a_l_utilisateur()
+    while not est_un_nombre(entree):
+        entree = demande_a_l_utilisateur()
+    return float(entree)
 
 
-# def main():
-#     while True:
-#         nombre_propose = int(demander_un_nombre_a_l_utilisateur())
-#         if nombre_propose > NOMBRE_A_TROUVER:
-#             print("c'est moins")
-#         elif nombre_propose < NOMBRE_A_TROUVER:
-#             print("c'est plus")
-#         else:
-#             break
-#     print("bravo")
+def plus_ou_moins(nombre_propose, nombre_a_trouver):
+    if nombre_propose < nombre_a_trouver:
+        return 1
+    if nombre_propose > nombre_a_trouver:
+        return -1
 
-print("dans plus ou moins", __name__)
+
+def gagne(nombre_propose, nombre_a_trouver):
+    return nombre_a_trouver == nombre_propose
+
+
+# essayer de convertir la chaine en nombre
+# indique si c'est plus ou moins
+# indique si c'est gagné
+
+
+def main():
+    while True:
+        nombre_propose = int(demander_un_nombre_a_l_utilisateur())
+        valeur_plus_moins = plus_ou_moins(nombre_propose, NOMBRE_A_TROUVER)
+        if valeur_plus_moins:
+            if valeur_plus_moins < 0:
+                print(CHAINE_CEST_PLUS)
+            if valeur_plus_moins > 0:
+                print(CHAINE_CEST_PLUS)
+        if gagne(nombre_propose, NOMBRE_A_TROUVER):
+            break
+    print("bravo")
+
 
 if __name__ == "__main__":
-    # main()
-    pass
+    main()
