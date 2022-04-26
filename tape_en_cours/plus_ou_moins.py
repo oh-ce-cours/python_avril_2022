@@ -12,7 +12,7 @@ def demande_a_l_utilisateur():
 def est_un_nombre(valeur: str) -> bool:
     try:
         float(valeur)
-    except ValueError:
+    except (ValueError, TypeError) as e:
         return False
     except IndexError:
         return False
