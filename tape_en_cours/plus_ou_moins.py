@@ -3,6 +3,11 @@ from tkinter.messagebox import NO
 
 NOMBRE_A_TROUVER = 5
 
+# demande un nombre à l'utilisateur
+# essaier de convertir la chaine en nombre
+# indique si c'est plus ou moins
+# indique si c'est gagné
+
 
 while True:
     nombre_propose = int(input("Entre un nombre s'il vous plait: "))
@@ -13,8 +18,5 @@ while True:
     else:
         break
 
-    # demande un nombre à l'utilisateur
-    # indique si c'est plus ou moins
-    # indique si c'est gagné
 
 print("bravo")
