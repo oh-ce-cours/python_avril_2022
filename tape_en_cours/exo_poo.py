@@ -15,6 +15,9 @@ class Personne:
         txt = "majeur" if self.est_majeur() else "mineur"
         return f"Je suis {self.nom}, j'ai {self.get_age()} ans et je suis {txt}"
 
+    def __str__(self):
+        return self.presentation()
+
 
 p1 = Personne(2020, "Matthieu")
 print(p1.presentation())
