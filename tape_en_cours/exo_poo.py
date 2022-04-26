@@ -6,7 +6,7 @@ class Personne:
         self.nom = nom
 
     def get_age(self):
-        return 2020 - self.naissance
+        return 2022 - self.naissance
 
     def est_majeur(self) -> bool:
         return self.get_age() > self.AGE_MAJORITE
