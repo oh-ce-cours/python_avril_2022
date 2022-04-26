@@ -18,3 +18,4 @@ class Personne:
 
 p1 = Personne(2020, "Matthieu")
 print(p1.presentation())
+print(p1)
