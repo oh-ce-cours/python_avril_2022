@@ -21,4 +21,4 @@ class Personne:
 
 
 p1 = Personne(1990, "Matthieu")
-p1.presentation()
+print(p1.presentation())
