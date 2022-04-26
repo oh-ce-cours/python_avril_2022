@@ -1,5 +1,4 @@
 import random
-from tkinter.messagebox import NO
 
 NOMBRE_A_TROUVER = 5
 
