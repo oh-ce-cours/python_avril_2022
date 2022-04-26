@@ -14,6 +14,8 @@ def est_un_nombre(valeur: str) -> bool:
         float(valeur)
     except ValueError:
         return False
+    except IndexError:
+        return False
     else:
         return True
 
