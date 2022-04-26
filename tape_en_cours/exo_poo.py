@@ -8,3 +8,6 @@ class Personne:
     def est_majeur(self) -> bool:
         age = 2020 - self.naissance
         return age > self.AGE_MAJORITE
+
+    def presentation(self):
+        return f"Je suis {self.nom} et je suis majeur {self.est_majeur}"
