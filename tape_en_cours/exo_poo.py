@@ -10,4 +10,4 @@ class Personne:
         return age > self.AGE_MAJORITE
 
     def presentation(self):
-        return f"Je suis {self.nom} et je suis majeur {self.est_majeur}"
+        return f"Je suis {self.nom}, j'ai {2020 - self.naissance} ans et je suis majeur {self.est_majeur}"
