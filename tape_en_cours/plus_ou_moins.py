@@ -3,7 +3,7 @@ from tkinter.messagebox import NO
 
 NOMBRE_A_TROUVER = 5
 
-nombre_propose = input("Entre un nombre s'il vous plait: ")
+nombre_propose = int(input("Entre un nombre s'il vous plait: "))
 
 while nombre_propose != NOMBRE_A_TROUVER:
     if nombre_propose > NOMBRE_A_TROUVER:
