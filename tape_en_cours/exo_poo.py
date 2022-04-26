@@ -20,5 +20,5 @@ class Personne:
         return f"Je suis {self.nom}, j'ai {self.get_age()} ans et {txt}"
 
 
-p1 = Personne(1990, "Matthieu")
+p1 = Personne(2020, "Matthieu")
 print(p1.presentation())
