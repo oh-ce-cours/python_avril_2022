@@ -28,14 +28,13 @@ def demander_un_nombre_a_l_utilisateur() -> float:
 # indique si c'est gagné
 
 
-while True:
-    nombre_propose = int(demander_un_nombre_a_l_utilisateur())
-    if nombre_propose > NOMBRE_A_TROUVER:
-        print("c'est moins")
-    elif nombre_propose < NOMBRE_A_TROUVER:
-        print("c'est plus")
-    else:
-        break
-
-
-print("bravo")
+def main():
+    while True:
+        nombre_propose = int(demander_un_nombre_a_l_utilisateur())
+        if nombre_propose > NOMBRE_A_TROUVER:
+            print("c'est moins")
+        elif nombre_propose < NOMBRE_A_TROUVER:
+            print("c'est plus")
+        else:
+            break
+    print("bravo")
