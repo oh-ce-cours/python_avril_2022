@@ -30,6 +30,10 @@ class Formation:
     def __iter__(self):
         return iter(self.personnes_presentes())
 
+    def __add__(self, other: Formation):
+        pass 
+
+f1 + f2  => f1.__add__(f2)
 
 p1 = Personne(1990, "Matthieu")
 p2 = Personne(1990, "Yann")
