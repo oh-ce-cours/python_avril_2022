@@ -1,7 +1,6 @@
 {
-  "python.testing.pytestArgs": [
-    "tape_en_cours"
-  ],
+  "python.testing.pytestArgs": ["tape_en_cours"],
   "python.testing.unittestEnabled": false,
-  "python.testing.pytestEnabled": true
+  "python.testing.pytestEnabled": true,
+  "cSpell.words": ["Erwann"]
 }

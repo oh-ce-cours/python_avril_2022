@@ -28,3 +28,5 @@ class Formation:
 p1 = Personne(1990, "Matthieu")
 p2 = Personne(1990, "Yann")
 p3 = Personne(1991, "Erwann")
+
+f = Formation(  )
