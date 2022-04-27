@@ -25,6 +25,6 @@ class Formation:
         self.prof = prof
 
 
-p1 = Personne(2020, "Matthieu")
+p1 = Personne(1990, "Matthieu")
 print(p1.presentation())
 print(p1)
