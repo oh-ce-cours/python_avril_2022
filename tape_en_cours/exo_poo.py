@@ -30,7 +30,7 @@ class Formation:
     def __iter__(self):
         return iter(self.personnes_presentes())
 
-    def __add__(self, other: Formation):
+    def __add__(self, other):
         pass 
 
 f1 + f2  => f1.__add__(f2)
