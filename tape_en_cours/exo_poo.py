@@ -26,5 +26,5 @@ class Formation:
 
 
 p1 = Personne(1990, "Matthieu")
-print(p1.presentation())
-print(p1)
+p2 = Personne(1990, "Yann")
+p3 = Personne(1991, "Erwann")
