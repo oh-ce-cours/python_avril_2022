@@ -4,7 +4,7 @@ class Personne:
     def __init__(self, naissance, nom) -> None:
         self.naissance = naissance
         self.nom = nom
- 
+
     def get_age(self):
         return 2022 - self.naissance
 
@@ -17,6 +17,12 @@ class Personne:
 
     def __str__(self):
         return self.presentation()
+
+
+class Formation:
+    def __init__(self, prof, eleves):
+        self.eleves = eleves
+        self.prof = prof
 
 
 p1 = Personne(2020, "Matthieu")
