@@ -31,7 +31,9 @@ class Formation:
         return iter(self.personnes_presentes())
 
     def __add__(self, other):
-        pass 
+        if not self.prof == other.prof:
+            raise NotImplemented("il faut le même prof pour fusioner les formations")
+        self.eleves.extend(other.eleves)
 
 f1 + f2  => f1.__add__(f2)
 
