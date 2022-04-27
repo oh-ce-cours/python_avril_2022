@@ -34,5 +34,5 @@ p3 = Personne(1991, "Erwann")
 
 
 f = Formation(prof=p1, eleves=[p2, p3])
-for personne in f:
+for personne in f.personnes_presentes():
     print(personne)
