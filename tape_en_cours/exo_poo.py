@@ -20,7 +20,7 @@ class Personne:
 
 
 class Formation:
-    def __init__(self, prof, eleves):
+    def __init__(self, prof: Personne, eleves):
         self.eleves = eleves
         self.prof = prof
 
