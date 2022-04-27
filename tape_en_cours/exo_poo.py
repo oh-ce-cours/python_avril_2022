@@ -25,7 +25,7 @@ class Formation:
         self.prof = prof
 
     def __iter__(self):
-        return [self.prof] + self.eleves
+        return iter([self.prof] + self.eleves)
 
 
 p1 = Personne(1990, "Matthieu")
