@@ -35,7 +35,8 @@ class Formation:
             raise NotImplemented("il faut le même prof pour fusioner les formations")
         self.eleves.extend(other.eleves)
 
-f1 + f2  => f1.__add__(f2)
+
+# f1 + f2  => f1.__add__(f2)
 
 p1 = Personne(1990, "Matthieu")
 p2 = Personne(1990, "Yann")
