@@ -44,6 +44,7 @@ p3 = Personne(1991, "Erwann")
 
 
 f = Formation(prof=p1, eleves=[p2, p3])
+f2 = Formation(prof=p1, eleves=[p2, p3])
 # f = [p1, p2, p3]
 
 for personne in f:
