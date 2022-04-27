@@ -32,6 +32,12 @@ p1 = Personne(1990, "Matthieu")
 p2 = Personne(1990, "Yann")
 p3 = Personne(1991, "Erwann")
 
+a = iter([p1, p2, p3])
+print(next(a))
+print(next(a))
+print(next(a))
+print(next(a))
+
 f = Formation(prof=p1, eleves=[p2, p3])
 for personne in f:
     print(personne)
