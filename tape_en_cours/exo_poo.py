@@ -47,5 +47,7 @@ f = Formation(prof=p1, eleves=[p2, p3])
 f2 = Formation(prof=p1, eleves=[p2, p3])
 # f = [p1, p2, p3]
 
+f = f + f2
+
 for personne in f:
     print(personne)
