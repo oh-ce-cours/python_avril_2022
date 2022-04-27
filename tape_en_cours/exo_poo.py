@@ -4,7 +4,7 @@ class Personne:
     def __init__(self, naissance, nom) -> None:
         self.naissance = naissance
         self.nom = nom
-
+ 
     def get_age(self):
         return 2022 - self.naissance
 
