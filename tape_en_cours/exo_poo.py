@@ -30,3 +30,4 @@ p2 = Personne(1990, "Yann")
 p3 = Personne(1991, "Erwann")
 
 f = Formation(prof=p1, eleves=[p2, p3])
+[f.prof] + f.eleves
