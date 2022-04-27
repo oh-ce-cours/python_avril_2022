@@ -27,6 +27,9 @@ class Formation:
     def personnes_presentes(self):
         return [self.prof] + self.eleves
 
+    def __iter__(self):
+        return iter(self.personnes_presentes())
+
 
 p1 = Personne(1990, "Matthieu")
 p2 = Personne(1990, "Yann")
@@ -34,5 +37,5 @@ p3 = Personne(1991, "Erwann")
 
 
 f = Formation(prof=p1, eleves=[p2, p3])
-for personne in f.personnes_presentes():
+for personne in f:
     print(personne)
