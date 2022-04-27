@@ -24,8 +24,8 @@ class Formation:
         self.eleves = eleves
         self.prof = prof
 
-    def __iter__(self):
-        return iter([self.prof] + self.eleves)
+    def personnes_presentes(self):
+        return [self.prof] + self.eleves
 
 
 p1 = Personne(1990, "Matthieu")
